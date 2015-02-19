@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<tileset version="1.0" name="YAF Tileset" author="Spike" compiled="true" src="test.tileset.dds">
+  <layer name="Dirt">
+    <texture src="basic\dirt1.bmp"/>
+  </layer>
+  <layer name="Rock">
+    <texture src="basic\rock1.bmp"/>
+  </layer>
+  <layer name="Grass">
+    <texture src="basic\grass1.bmp"/>
+  </layer>
+</tileset>

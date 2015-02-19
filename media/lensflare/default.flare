@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<lensflare>
+ <flare r="1"   g="1"   b="0"   src="radial.bmp"  scale="25" position="0.1"/>
+ <flare r="0"   g="0.5" b="1"   src="radial.bmp"  scale="25" position="0.7"/>
+ <flare r="1"   g="0"   b="1"   src="halo.bmp"    scale="15" position="0.3"/>
+ <flare r="0"   g="1"   b="1"   src="halo.bmp"    scale="30" position="1"/>
+ <flare r="0.5" g="1"   b="0.5" src="halo.bmp"    scale="40" position="0.4"/>
+ <flare r="1"   g="1"   b="0.5" src="streaks.bmp" scale="20" position="0.9"/>
+ <flare r="1"   g="0"   b="0.5" src="streaks.bmp" scale="30" position="0.2"/>
+</lensflare>

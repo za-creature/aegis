@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<skybox version="1.0" name="Default Skybox" author="Spike" width="512" height="512" depth="512">
+ <face position="front" src="skybox\default\front.dds"/>
+ <face position="back" src="skybox\default\back.dds"/>
+ <face position="left" src="skybox\default\left.dds"/>
+ <face position="right" src="skybox\default\right.dds"/>
+ <face position="top" src="skybox\default\top.dds"/>
+ <face position="bottom" src="skybox\default\!!bottom.dds"/>
+</skybox>

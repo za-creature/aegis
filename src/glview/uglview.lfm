@@ -1,0 +1,33 @@
+object glview: Tglview
+  Left = 430
+  Height = 300
+  Top = 232
+  Width = 400
+  HorzScrollBar.Page = 399
+  VertScrollBar.Page = 299
+  Caption = 'glview'
+  ClientHeight = 300
+  ClientWidth = 400
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object GLContext: TOpenGLControl
+    Height = 300
+    Width = 400
+    Align = alClient
+    OnMouseDown = GLContextMouseDown
+    OnMouseLeave = GLContextMouseLeave
+    OnMouseMove = GLContextMouseMove
+    OnMouseUp = GLContextMouseUp
+    OnMouseWheelDown = GLContextMouseWheelDown
+    OnMouseWheelUp = GLContextMouseWheelUp
+    OnPaint = GLContextPaint
+    OnResize = GLContextResize
+  end
+  object IdleTimer: TIdleTimer
+    Enabled = False
+    Interval = 1
+    OnTimer = IdleTimerTimer
+    left = 8
+    top = 8
+  end
+end

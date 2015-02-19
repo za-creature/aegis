@@ -1,0 +1,394 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="5"/>
+    <General>
+      <MainUnit Value="0"/>
+      <IconPath Value="./"/>
+      <TargetFileExt Value=".exe"/>
+      <Title Value="glview"/>
+      <ActiveEditorIndexAtStart Value="1"/>
+    </General>
+    <PublishOptions>
+      <Version Value="2"/>
+      <DestinationDirectory Value="$(TestDir)\publishedproject\"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T 'Lazarus Run Output' -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LazOpenGLContext"/>
+        <MinVersion Valid="True"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="FCL"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="36">
+      <Unit0>
+        <Filename Value="hello.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="hello"/>
+        <CursorPos X="31" Y="28"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="201"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="src\uMain.pp"/>
+        <ComponentName Value="Main"/>
+        <ResourceFilename Value="src\uMain.lrs"/>
+        <UnitName Value="uMain"/>
+        <CursorPos X="12" Y="211"/>
+        <TopLine Value="191"/>
+        <UsageCount Value="197"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="inc\uIO32.inc"/>
+        <CursorPos X="1" Y="258"/>
+        <TopLine Value="245"/>
+        <UsageCount Value="30"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="src\uFont.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uFont"/>
+        <CursorPos X="1" Y="104"/>
+        <TopLine Value="68"/>
+        <UsageCount Value="200"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="src\glext.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="glext"/>
+        <CursorPos X="21" Y="234"/>
+        <TopLine Value="225"/>
+        <UsageCount Value="200"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="src\uMath.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMath"/>
+        <CursorPos X="12" Y="101"/>
+        <TopLine Value="87"/>
+        <EditorIndex Value="3"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="src\uCamera.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uCamera"/>
+        <CursorPos X="14" Y="1"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="src\uIO64.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uIO64"/>
+        <CursorPos X="18" Y="1"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="5"/>
+        <UsageCount Value="200"/>
+        <Bookmarks Count="2">
+          <Item0 X="20" Y="404" ID="1"/>
+          <Item1 X="1" Y="489" ID="2"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="src\__uIO32.pp"/>
+        <UnitName Value="uIO32"/>
+        <CursorPos X="6" Y="1288"/>
+        <TopLine Value="1294"/>
+        <UsageCount Value="26"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="inc\uIO64.inc"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="4" Y="233"/>
+        <TopLine Value="255"/>
+        <EditorIndex Value="6"/>
+        <UsageCount Value="195"/>
+        <Loaded Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\Lazarus\ide\codeexplorer.pas"/>
+        <ComponentName Value="CodeExplorerView"/>
+        <HasResources Value="True"/>
+        <ResourceFilename Value="..\..\Lazarus\ide\codeexplorer.lrs"/>
+        <UnitName Value="CodeExplorer"/>
+        <CursorPos X="15" Y="618"/>
+        <TopLine Value="618"/>
+        <UsageCount Value="9"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="src\uNewMapDialog.pp"/>
+        <ComponentName Value="NewMapDialog"/>
+        <ResourceFilename Value="src\uNewMapDialog.lrs"/>
+        <UnitName Value="uNewMapDialog"/>
+        <CursorPos X="10" Y="326"/>
+        <TopLine Value="294"/>
+        <UsageCount Value="195"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\Lazarus\ide\mainbar.pas"/>
+        <UnitName Value="MainBar"/>
+        <CursorPos X="40" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\Lazarus\ide\mainbase.pas"/>
+        <UnitName Value="MainBase"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\Lazarus\ide\main.pp"/>
+        <UnitName Value="Main"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="src\uAboutDialog.pp"/>
+        <ComponentName Value="AboutDialog"/>
+        <ResourceFilename Value="src\uAboutDialog.lrs"/>
+        <UnitName Value="uAboutDialog"/>
+        <CursorPos X="12" Y="40"/>
+        <TopLine Value="12"/>
+        <UsageCount Value="188"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="src\uEditorOptionsDialog.pp"/>
+        <ComponentName Value="EditorOptionsDialog"/>
+        <HasResources Value="True"/>
+        <ResourceFilename Value="src\uEditorOptionsDialog.lrs"/>
+        <UnitName Value="uEditorOptionsDialog"/>
+        <CursorPos X="21" Y="69"/>
+        <TopLine Value="63"/>
+        <UsageCount Value="170"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="inc\uIO64_Map.inc"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="19" Y="775"/>
+        <TopLine Value="757"/>
+        <EditorIndex Value="9"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="inc\uIO64_Config.inc"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="4"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="inc\uIO64_Model.inc"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="15" Y="7"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="7"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="inc\uIO64_Texture.inc"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="19" Y="156"/>
+        <TopLine Value="138"/>
+        <EditorIndex Value="8"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="inc\uIO64_LightSource.inc"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="43" Y="31"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="200"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="inc\uIO64_Shader.inc"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="8" Y="5"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="200"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="inc\uIO64_Skybox.inc"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="60" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="200"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="..\..\test.pp"/>
+        <UnitName Value="test"/>
+        <CursorPos X="1" Y="35"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="7"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="..\..\Lazarus\fpcsrc\fcl\xml\dom.pp"/>
+        <UnitName Value="DOM"/>
+        <CursorPos X="53" Y="43"/>
+        <TopLine Value="25"/>
+        <UsageCount Value="9"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="inc\config.inc"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="1" Y="14"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="143"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="..\..\Lazarus\fpcsrc\packages\extra\opengl\gl.pp"/>
+        <UnitName Value="GL"/>
+        <CursorPos X="3" Y="79"/>
+        <TopLine Value="61"/>
+        <UsageCount Value="4"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="inc\uIO64_LensFlare.inc"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="56" Y="47"/>
+        <TopLine Value="22"/>
+        <UsageCount Value="96"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="C:\DOCUME~1\Spike\LOCALS~1\Temp\testcompileroptions.pas"/>
+        <UnitName Value="testcompileroptions"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="4"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="src\uNewMapDialog.lfm"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="6"/>
+        <SyntaxHighlighter Value="LFM"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="src\uAboutDialog.lfm"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="6"/>
+        <SyntaxHighlighter Value="LFM"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="src\glview\uglview.pp"/>
+        <ComponentName Value="glview"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceFilename Value="src\glview\uglview.lrs"/>
+        <UnitName Value="uglview"/>
+        <CursorPos X="45" Y="168"/>
+        <TopLine Value="139"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="81"/>
+        <Loaded Value="True"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="inc\_timer.inc"/>
+        <CursorPos X="47" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="inc\uIO64_Timer.inc"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="1" Y="5"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="38"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="inc\uIO64_Animation.inc"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="57" Y="19"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="35"/>
+      </Unit35>
+    </Units>
+    <JumpHistory Count="0" HistoryIndex="-1"/>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="5"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="bin\glview"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="inc\"/>
+      <Libraries Value="lib\"/>
+      <OtherUnitFiles Value="src\;lib\;$(LazarusDir)\pp\units\i386-win32\*\;src\glview\"/>
+      <UnitOutputDirectory Value="lib"/>
+      <SrcPath Value="$(LazarusDir)\lcl\;$(LazarusDir)\lcl\interfaces\$(LCLWidgetType)\;src\;$(LazarusDir)\fpcsrc\fcl\xml\;$(LazarusDir)\fpcsrc\fcl\inc\;$(LazarusDir)\fpcsrc\packages\extra\opengl\"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <StaticKeyword Value="True"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <Checks>
+        <IOChecks Value="True"/>
+        <RangeChecks Value="True"/>
+        <OverflowChecks Value="True"/>
+        <StackChecks Value="True"/>
+      </Checks>
+      <Generate Value="Faster"/>
+      <Optimizations>
+        <OptimizationLevel Value="2"/>
+      </Optimizations>
+    </CodeGeneration>
+    <Linking>
+      <LinkSmart Value="True"/>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <Verbosity>
+        <ShowNotes Value="False"/>
+        <ShowGenInfo Value="False"/>
+        <ShowSummary Value="True"/>
+      </Verbosity>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="2">
+      <Item1>
+        <Name Value="ECodetoolError"/>
+      </Item1>
+      <Item2>
+        <Name Value="EFOpenError"/>
+      </Item2>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

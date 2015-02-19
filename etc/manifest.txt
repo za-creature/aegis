@@ -1,0 +1,87 @@
+MINOR VERSIONS
+
+0.01
+
+OpenGL Init
+
+0.02
+
+Triangle Support
+
+0.03
+
+Quad Support
+
+0.04
+
+Flat color support
+
+0.05
+
+Smooth color support
+
+0.06
+
+3D models
+
+0.07
+
+Spinning 3D models
+
+0.08
+
+Texture support
+
+0.09
+
+Moving trough a 3D world
+
+MAJOR VERSIONS
+
+v0.1
+
+Lightning Support (ambient and difuse) - 1.11
+Filtering Support (none,linear, bilinear and trilinear) - 1.12
+Gave up that CPU-friendly mode. Now it uses 100% of the CPU, but as a result, the engine runs more smoothly -1.13
+Added mouse support for turning (needs a smoothing algorithm) - 1.13
+Modified the key handler to be able to read more than one key at a time - 1.13
+Added support for fullscreen mode (needs recompiling to shift trough) - 1.14
+Added a FPS counter for the window version - v1.15		
+Pre-alpha version of a Model Reader (can read and texturize a triangle) - 1.17
+Alpha version of Model Reader - 1.18
+Beta version of Model Reader - 1.19
+
+v0.2
+
+Integrated Model Reader (Deprecated as of v0.5)
+Specular Light support (Not visible in the demo)
+
+v0.3
+
+Map Loading Functions (Deprecated as of v0.6)
+Landscape Drawing using VBOs (Deprecated as of v0.6)
+
+v0.4
+
+Shaders
+Created support for a configuration file and a log.
+
+v0.5
+
+Rewritten Basecode.
+Fixed Tons of bugs.
+No more memory leaks (hopefully)
+Renamed to Oblivion 3D
+Added DDS Compressed Texture Loader (DXT1, DXT3 and DXT5)
+Added Milkshape Model Loader
+Added Font Handling Library. Todo: optimize
+Added Model Drawing Options: OpenGL Lists, Vertex Arrays, Vertex Buffer Objects
+Created Picking functions. A Special Thanks goes to Dragomir Dan for having the time and patience to help me with this tricky subject
+
+v0.6
+
+Renamed to Aegis (hopefully no more renames until the final release)
+Added Skybox handling functions (todo: smoothen the edge between the boxes)
+Added a light class, radial blur and a lens flare effect (need to switch from occlusion queries as not many cards support them)
+Rewrote map loading functions (about 2 or 3 times)
+Created an almost-functional map editor as a side project. Integrated the engine within Lazarus without much trouble.

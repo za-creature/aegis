@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<map version="1.0" width="64" height="64" author="Spike" title="A Map" description="Hello world. 
+
+I'm a fucking map.">
+ <tileset src="basic.tileset"/>
+ <heightmap src="mymap.height"/>
+ <texturemap src="mymap.texture"/>
+</map>

@@ -1,0 +1,196 @@
+object NewMapDialog: TNewMapDialog
+  Left = 571
+  Height = 240
+  Top = 256
+  Width = 340
+  HorzScrollBar.Page = 339
+  VertScrollBar.Page = 239
+  ActiveControl = SizeSmall
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Create a new Map'
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  Position = poMainFormCenter
+  object SizeGroupBox: TGroupBox
+    Left = 8
+    Height = 192
+    Top = 8
+    Width = 152
+    Caption = 'Size:'
+    TabOrder = 0
+    object HorizLabel: TLabel
+      Left = 14
+      Height = 13
+      Top = 128
+      Width = 60
+      Caption = 'Horizontal:'
+      Color = clNone
+      ParentColor = False
+    end
+    object VertLabel: TLabel
+      Left = 14
+      Height = 13
+      Top = 152
+      Width = 47
+      Caption = 'Vertical:'
+      Color = clNone
+      ParentColor = False
+    end
+    object SizeSmall: TRadioButton
+      Left = 14
+      Height = 20
+      Top = 8
+      Width = 103
+      Caption = 'Small (64x64)'
+      Checked = True
+      OnChange = RadioChange
+      State = cbChecked
+      TabOrder = 0
+    end
+    object SizeMedium: TRadioButton
+      Left = 14
+      Height = 20
+      Top = 31
+      Width = 131
+      Caption = 'Medium (128x128)'
+      OnChange = RadioChange
+      TabOrder = 1
+    end
+    object SizeLarge: TRadioButton
+      Left = 14
+      Height = 20
+      Top = 56
+      Width = 119
+      Caption = 'Large (256x256)'
+      OnChange = RadioChange
+      TabOrder = 2
+    end
+    object SizeHuge: TRadioButton
+      Left = 14
+      Height = 20
+      Top = 80
+      Width = 117
+      Caption = 'Huge (512x512)'
+      OnChange = RadioChange
+      TabOrder = 3
+    end
+    object SizeCustom: TRadioButton
+      Left = 14
+      Height = 20
+      Top = 104
+      Width = 68
+      Caption = 'Custom'
+      TabOrder = 4
+    end
+    object SizeHorizTrackbar: TTrackBar
+      Left = 70
+      Height = 29
+      Top = 128
+      Width = 72
+      Max = 8
+      Min = 1
+      OnChange = TrackbarChange
+      PageSize = 1
+      Position = 1
+      ScalePos = trTop
+      TabOrder = 5
+    end
+    object SizeVertTrackbar: TTrackBar
+      Left = 70
+      Height = 29
+      Top = 152
+      Width = 72
+      Max = 8
+      Min = 1
+      OnChange = TrackbarChange
+      PageSize = 1
+      Position = 1
+      ScalePos = trTop
+      TabOrder = 6
+    end
+  end
+  object OkButton: TButton
+    Left = 88
+    Height = 25
+    Top = 208
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Ok'
+    Default = True
+    ModalResult = 1
+    OnClick = OkButtonClick
+    TabOrder = 1
+  end
+  object CancelButton: TButton
+    Left = 176
+    Height = 25
+    Top = 208
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 2
+  end
+  object TilesetGroupbox: TGroupBox
+    Left = 176
+    Height = 192
+    Top = 8
+    Width = 160
+    Caption = 'Tileset'
+    TabOrder = 3
+    object PreviewImage: TImage
+      Left = 14
+      Height = 64
+      Top = 104
+      Width = 128
+    end
+    object FilenameLabel: TLabel
+      Left = 14
+      Height = 13
+      Top = 24
+      Width = 59
+      Caption = 'Filename: '
+      Color = clNone
+      ParentColor = False
+    end
+    object AuthorLabel: TLabel
+      Left = 14
+      Height = 13
+      Top = 43
+      Width = 45
+      Caption = 'Author: '
+      Color = clNone
+      ParentColor = False
+    end
+    object VersionLabel: TLabel
+      Left = 14
+      Height = 13
+      Top = 62
+      Width = 47
+      Caption = 'Version:'
+      Color = clNone
+      ParentColor = False
+    end
+    object PreviewLabel: TLabel
+      Left = 14
+      Height = 13
+      Top = 82
+      Width = 53
+      Caption = 'Preview: '
+      Color = clNone
+      ParentColor = False
+    end
+    object TilesetCombobox: TComboBox
+      Left = 14
+      Height = 21
+      Width = 128
+      AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+      MaxLength = 0
+      OnSelect = TilesetComboboxSelect
+      TabOrder = 0
+      Text = 'No tilesets available'
+    end
+  end
+end

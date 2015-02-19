@@ -1,0 +1,26 @@
+v0.1: Normal Calculator
+
+v0.2: Bitmap loading
+      Optimizations, smaller code, inteligible syntax
+
+v0.3: New: GWO Loading
+
+v0.4: GWM Loading
+      Bitmap Saving
+      Highly optimized Bitmap Loading and Saving, using BGR Mode
+      Bugfix: SaveBitmap: InfoHeaderSize is 0. Should be 40. Saved bitmaps are now visible under MS Paint
+v0.5: Shader Loading
+v0.6: Brought back to unit mode.
+      Fixed all memory leaks (hopefully)
+      Rewritten the entire API
+v0.7: Rewritten the entire API (AGAIN) to a class-based design
+      Added classes for: Textures, Lights, Models, Maps, Tilesets, Skyboxes and Shaders
+      Created XML specs for the TTileset and TSkybox classes. (todo: Make XML specs for TLightSource)
+      Renamed to io64 (meh, 64 bit computing :P)
+0.72: Modified TTileset to be a TResource descendant
+      Some bugfixes in the resource manager to support recursive resource loading
+      Created XML specs for TLightSource; wrote the loader class
+
+
+      
+      

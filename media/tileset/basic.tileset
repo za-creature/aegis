@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<tileset version="1.0" name="Basic Tileset" author="Spike" compiled="true" src="basic.tileset.dds">
+  <layer name="Dirt">
+    <texture src="tileset\basic\sand1.bmp"/>
+  </layer>
+  <layer name="Rock">
+    <texture src="tileset\basic\rock1.bmp"/>
+  </layer>
+  <layer name="Dirt 2">
+    <texture src="tileset\basic\dirt2.bmp"/>
+  </layer>
+  <layer name="Rock 2">
+    <texture src="tileset\basic\rock2.bmp"/>
+  </layer>
+  <layer name="Red Rock">
+    <texture src="tileset\basic\redrock1.bmp"/>
+  </layer>
+  <layer name="Sand">
+    <texture src="tileset\basic\dirt1.bmp"/>
+  </layer>
+  <layer name="Grass">
+    <texture src="tileset\basic\grass1.bmp"/>
+  </layer>
+  <layer name="Snow">
+    <texture src="tileset\basic\snow1.bmp"/>
+  </layer>
+</tileset>

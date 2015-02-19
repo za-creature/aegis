@@ -1,0 +1,52 @@
+Global Wars Object specification
+Copyright 2004 GameLabs Interactive
+
+Warning: This format has been replaced with MS3D on sep 18 2005
+
+Chapter 1: Header Definition
+
+Line 1: File type (must be set to GWO or GWOEXT)
+Line 2: Model Name
+Line 3: NumVertices - number of vertices (3D points)
+Line 4: NumPolys - number of triangles
+Line 5: NumTextures - number of textures
+
+//ONLY FOR GWOEXT
+
+Line 6: NumAnims - number of animations - must be greater than or equal 1
+Line(s) 7 - (6+NumAnims): Name of animations 
+
+Chapter 2: Texture Definition
+
+Texture search paths:
+
+<none> (texture comes with it's own path)
+..\media\texture\ (for MODs that will be stored in usr\%MODNAME%\media\texture )
+%GAMEDIR%\media\texture\ (absolute path)
+
+Definition type:
+
+Texture_ID texturename
+
+Example:
+
+1 wall.bmp
+2 ..\media\texture\ground.bmp
+
+Chapter 3: Polygon Definition
+
+Definition type:
+
+Polygon_num_Vertices (3 or 4) Texture_ID NormX NormY NormZ
+
+(Vertex_1) Xcoord Ycoord Zcoord TexXcoord TexYCoord
+(Vertex_2) Xcoord Ycoord Zcoord TexXcoord TexYCoord
+(Vertex_3) Xcoord Ycoord Zcoord TexXcoord TexYCoord
+(Vertex_4) Xcoord Ycoord Zcoord TexXcoord TexYCoord (only if Polygon_num_vertices is 4)
+
+//Xcoord, Ycoord and Zcoord are relative; TexXcoord and TexYCoord are absolute
+
+
+Lines that begin with # are considered comments and ignored by the parser
+For more information about the format, consult media\mesh\triangle.gwo
+Note: In future versions, the model format will be archived with Zlib

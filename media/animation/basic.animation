@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<animation>
+
+
+ <boneset>
+  <joint name="">
+   <joint name="">
+   </joint>
+  </joint>
+ </boneset>
+ 
+ <subanimation name="" length="" start="" end=""/>
+ <subanimation name="" length="" start="" end=""/>
+ <subanimation name="" length="" start="" end=""/>
+ 
+</animation>

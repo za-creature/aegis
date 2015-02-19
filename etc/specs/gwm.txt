@@ -1,0 +1,20 @@
+THIS FORMAT IS DEPRECATED. Replaced with binary equivalent 
+
+Header
+Line 1: File Type
+GWM or GWMEXT
+This specification will only define GWM, not GWMEXT
+Line 2:File Name
+Line 3:Width
+Line 4:Height
+Line 5:Number of Textures
+Content
+Texture Definition (GWO-Identical)
+Heightmap definition:
+y+1 lines of x+1 values separated by spaces, each representing the height of a vertex;
+
+Texturemap Definition
+Cell alocator: diagonal mode texture1 rotation texture1 id texture2 rotation texture2 id;
+One Row = $width Cell Alocators separated by spaces
+
+$Height rows separated by line-feeds

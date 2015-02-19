@@ -1,0 +1,181 @@
+object EditorOptionsDialog: TEditorOptionsDialog
+  Left = 538
+  Height = 180
+  Top = 241
+  Width = 330
+  HorzScrollBar.Page = 329
+  VertScrollBar.Page = 179
+  ActiveControl = SegmentationTrackbar
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Editor Options'
+  ClientHeight = 180
+  ClientWidth = 330
+  Position = poMainFormCenter
+  object MapOptionsGroupbox: TGroupBox
+    Left = 208
+    Height = 112
+    Top = 8
+    Width = 112
+    Caption = 'Map Options'
+    ClientHeight = 94
+    ClientWidth = 108
+    TabOrder = 0
+    object SegmentationLabel: TLabel
+      Left = 6
+      Height = 14
+      Top = 6
+      Width = 71
+      Caption = 'Segmentation:'
+      Color = clNone
+      ParentColor = False
+    end
+    object SegmentationTrackbar: TTrackBar
+      Left = 6
+      Height = 20
+      Top = 24
+      Width = 100
+      Max = 4
+      ScalePos = trTop
+      TabOrder = 0
+    end
+    object ViewNormalsCheckbox: TCheckBox
+      Left = 6
+      Height = 13
+      Top = 72
+      Width = 84
+      Caption = 'View Normals'
+      TabOrder = 1
+    end
+    object ViewGridCheckbox: TCheckBox
+      Left = 6
+      Height = 13
+      Top = 53
+      Width = 65
+      Caption = 'View Grid'
+      TabOrder = 2
+    end
+  end
+  object MouseOptionsGroupbox: TGroupBox
+    Left = 8
+    Height = 160
+    Top = 8
+    Width = 185
+    Caption = 'Mouse Options'
+    ClientHeight = 142
+    ClientWidth = 181
+    TabOrder = 1
+    object MoveSensitivityLabel: TLabel
+      Left = 6
+      Height = 14
+      Top = 6
+      Width = 79
+      Caption = 'Move Sensitivity'
+      Color = clNone
+      ParentColor = False
+    end
+    object TiltSensitivityLabel: TLabel
+      Left = 6
+      Height = 14
+      Top = 48
+      Width = 67
+      Caption = 'Tilt Sensitivity'
+      Color = clNone
+      ParentColor = False
+    end
+    object WheelSensitivityLabel: TLabel
+      Left = 6
+      Height = 14
+      Top = 88
+      Width = 117
+      Caption = 'Mouse Wheel Sensitivity'
+      Color = clNone
+      ParentColor = False
+    end
+    object MoveSensitivityTrackbar: TTrackBar
+      Left = 6
+      Height = 20
+      Top = 24
+      Width = 117
+      Max = 1000
+      Min = 100
+      PageSize = 100
+      Position = 100
+      ScalePos = trTop
+      TickStyle = tsNone
+      TabOrder = 0
+    end
+    object TiltSensitivityTrackbar: TTrackBar
+      Left = 6
+      Height = 20
+      Top = 64
+      Width = 117
+      Max = 1000
+      Min = 100
+      PageSize = 100
+      Position = 100
+      ScalePos = trTop
+      TickStyle = tsNone
+      TabOrder = 1
+    end
+    object WheelSensitivityTrackbar: TTrackBar
+      Left = 6
+      Height = 20
+      Top = 105
+      Width = 117
+      Max = 1000
+      Min = 100
+      PageSize = 100
+      Position = 100
+      ScalePos = trTop
+      TickStyle = tsNone
+      TabOrder = 2
+    end
+    object InvertMoveSensitivityCheckbox: TCheckBox
+      Left = 126
+      Height = 13
+      Top = 27
+      Width = 47
+      Caption = 'Invert'
+      TabOrder = 3
+    end
+    object InvertTiltSensitivityCheckbox: TCheckBox
+      Left = 126
+      Height = 13
+      Top = 67
+      Width = 47
+      Caption = 'Invert'
+      TabOrder = 4
+    end
+    object InvertWheelSensitivityCheckbox: TCheckBox
+      Left = 126
+      Height = 13
+      Top = 108
+      Width = 47
+      Caption = 'Invert'
+      TabOrder = 5
+    end
+  end
+  object OkButton: TButton
+    Left = 208
+    Height = 25
+    Top = 136
+    Width = 50
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Ok'
+    Default = True
+    ModalResult = 1
+    TabOrder = 2
+  end
+  object CancelButton: TButton
+    Left = 270
+    Height = 25
+    Top = 136
+    Width = 50
+    BorderSpacing.InnerBorder = 4
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 3
+  end
+end

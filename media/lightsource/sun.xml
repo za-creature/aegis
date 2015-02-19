@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<lightsource>
+ <position x="0" y="1000" z="500"/>
+ <color type="ambient"  r="0.4" g="0.4" b="0.4"/>
+ <color type="diffuse"  r="0.6" g="0.6" b="0.6"/>
+ <color type="specular" r="1.0" g="1.0" b="1.0"/>
+ <spot_exponent value="0"/>
+ <spot_cutoff value="180"/>
+ <spot_direction x="0" y="0" z="-1"/>
+ <attenuation type="constant"  value="1"/>
+ <attenuation type="linear"    value="0"/>
+ <attenuation type="quadratic" value="0"/>
+ <lens_flare value="true" src="default.flare"/>
+ <haze value="true"/>
+ <is_true_light value="true"/>
+</lightsource>
